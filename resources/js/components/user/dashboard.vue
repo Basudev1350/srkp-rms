@@ -1,5 +1,6 @@
 <template>
     <div class="content-wrapper">
+      <sidebar mainMenu="Dashboard"/> 
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -27,7 +28,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h6>Products</h6>
+                <h5>Products</h5>
 
                 <p>248</p>
               </div>
@@ -106,7 +107,7 @@
         <!-- /.row -->
         <div class="row">
           <div class="col-md-6">
-            <canvas id="myChart1"></canvas>
+              <apexchart width="500" type="bar" :options="options" :series="series"></apexchart>
           </div>
           <div class="col-md-6">
             <canvas id="myChart2"></canvas>
@@ -118,18 +119,34 @@
   </div>
 </template>
 <script>
-// import Sidebar from './layout/sidebar.vue'
+import Sidebar from './layout/sidebar.vue'
+//import Sidebar from './layout/sidebar.vue'
 // import TopNavigation from './layout/topNavigation.vue'
 // import BtmFooter from './layout/footer.vue'
+import VueApexCharts from 'vue-apexcharts'
+
+Vue.component('apexchart', VueApexCharts)
 export default {
-//   components:{
-//     'sidebar':Sidebar,
-//     'top-navigation':TopNavigation,
-//     'btm-footer':BtmFooter
-//   },
+  components:{
+     apexcharts: VueApexCharts,
+    'sidebar':Sidebar,
+    // 'top-navigation':TopNavigation,
+    // 'btm-footer':BtmFooter
+  },
   data(){
     return {
-      message: 'Some Message'
+    chartOptions: {
+        chart: {
+          id: 'basic-bar'
+        },
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+        }
+      },
+      series: [{
+        name: 'series-1',
+        data: [30, 40, 45, 50, 49, 60, 70, 91]
+      }]
     };
   },
   methods:{
