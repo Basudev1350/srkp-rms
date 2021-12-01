@@ -17,6 +17,11 @@ class SystemController extends Controller
     $this->middleware('auth');
   }
 
+  public function dashboard()
+  {
+    return view('user.dashboard');//folder.bladefile name
+  }
+
   /**
    * Show the application dashboard.
    *
