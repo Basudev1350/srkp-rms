@@ -31,6 +31,9 @@
        <div id="dashboard">
          @yield('dashboard')
         </div>
+        <div id="rawMaterials">
+         @yield('rawMaterials')
+        </div>
         <!-- REQUIRED SCRIPTS --> 
         <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
         <!-- jQuery -->

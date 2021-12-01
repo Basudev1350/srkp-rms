@@ -15,8 +15,8 @@ function newFunction()
         el: '#dashboard',
         router: new VueRouter(routes)
     });
-    const sidebar = new Vue({
-        el: '#sidebar',
+    const rawMaterials = new Vue({
+        el: '#rawMaterials',
         router: new VueRouter(routes)
     });     
  }

@@ -1,5 +1,6 @@
 
 import Dashboard  from './components/user/dashboard';
+import RawMaterials from './components/user/stockMaster/rawMaterials'
 
 export default{
     mode: 'history',
@@ -12,7 +13,11 @@ export default{
             component: Dashboard,
             name: "dashboard"
         },
-
+        {
+            path: '/raw-materials',
+            component: RawMaterials,
+            name: "raw-materials"
+        },
 
   ]
 }

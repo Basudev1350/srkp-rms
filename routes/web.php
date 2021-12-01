@@ -21,3 +21,4 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard','SystemController@dashboard')->name('dashboard');
+Route::get('/raw-materials','SystemController@rawMaterials');

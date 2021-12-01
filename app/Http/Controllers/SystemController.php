@@ -20,6 +20,10 @@ class SystemController extends Controller
   {
     return view('user.dashboard');//folder.bladefile name
   }
+  public function rawMaterials()
+  {
+    return view('user.stockMaster.rawMaterials');//folder.bladefile name
+  }
 
   /**
    * Show the application dashboard.
