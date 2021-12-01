@@ -5,7 +5,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar main-sidebar-custom elevation-4 sidebar-dark-primary">
       <!-- Brand Logo -->
-      <a href="index3.html" class="brand-link" style="background-image: linear-gradient(180deg,#1f6300,#133b00);">
+      <a href="#" class="brand-link" style="background-image: linear-gradient(180deg,#1f6300,#133b00);">
         <img src="dist/img/logo.jpeg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-bold">SRKP-RMS</span>
       </a>
@@ -16,7 +16,7 @@
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
   
-            <li class="nav-item">
+          <li class="nav-item">
             <router-link to="/dashboard" v-if="mainMenu == 'Dashboard'" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>Dashboard</p>
