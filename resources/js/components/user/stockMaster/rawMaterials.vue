@@ -72,7 +72,7 @@
                       <input type="text" placeholder="search by typing here" class="form-control form-control-sm">
                     </div>
                   </div>
-                  <table class="table table-bordered">
+                  <table class="table table-bordered table-striped">
                     <thread>
                       <tr>
                       <th>SL</th>
@@ -98,12 +98,8 @@
 </template>
 <script>
 import Sidebar from '../layout/sidebar.vue'
-//import Sidebar from './layout/sidebar.vue'
 import TopNavigation from '../layout/topNavigation.vue'
-// import BtmFooter from './layout/footer.vue'
-// import VueApexCharts from 'vue-apexcharts'
 
-// Vue.component('apexchart', VueApexCharts)
 export default {
   components:{
     //  apexcharts: VueApexCharts,
@@ -113,18 +109,6 @@ export default {
   },
   data(){
     return {
-    // chartOptions: {
-    //     chart: {
-    //       id: 'basic-bar'
-    //     },
-    //     xaxis: {
-    //       categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
-    //     }
-    //   },
-    //   series: [{
-    //     name: 'series-1',
-    //     data: [30, 40, 45, 50, 49, 60, 70, 91]
-    //   }]
     };
   },
   methods:{

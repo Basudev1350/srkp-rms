@@ -2458,11 +2458,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
- //import Sidebar from './layout/sidebar.vue'
 
- // import BtmFooter from './layout/footer.vue'
-// import VueApexCharts from 'vue-apexcharts'
-// Vue.component('apexchart', VueApexCharts)
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2472,19 +2468,7 @@ __webpack_require__.r(__webpack_exports__);
 
   },
   data: function data() {
-    return {// chartOptions: {
-      //     chart: {
-      //       id: 'basic-bar'
-      //     },
-      //     xaxis: {
-      //       categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
-      //     }
-      //   },
-      //   series: [{
-      //     name: 'series-1',
-      //     data: [30, 40, 45, 50, 49, 60, 70, 91]
-      //   }]
-    };
+    return {};
   },
   methods: {
     logout: function logout() {
@@ -38791,7 +38775,7 @@ var staticRenderFns = [
         staticStyle: {
           "background-image": "linear-gradient(180deg,#1f6300,#133b00)",
         },
-        attrs: { href: "index3.html" },
+        attrs: { href: "#" },
       },
       [
         _c("img", {
@@ -39169,7 +39153,7 @@ var render = function () {
                   _vm._v(" "),
                   _c(
                     "table",
-                    { staticClass: "table table-bordered" },
+                    { staticClass: "table table-bordered table-striped" },
                     [
                       _c("thread", [
                         _c("tr", [
