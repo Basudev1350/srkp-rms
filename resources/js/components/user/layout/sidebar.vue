@@ -43,11 +43,15 @@
                 </router-link>
               </li>
                <li class="nav-item">
-                <router-link to="#" class="nav-link">
+                <router-link to="/product-assembly" v-if="subMenu == 'Product-Assembly'"  class="nav-link active">
                   <i class="fa fa-archive nav-icon"></i>
                   <p>Product Assembly</p>
                  </router-link>
-                   </li>
+                 <router-link to="/product-assembly" v-else class="nav-link">
+                  <i class="fa fa-archive nav-icon"></i>
+                  <p>Product Assembly</p>
+                 </router-link>
+               </li>
             </ul>
           </li>
           <li class="nav-item" v-else>
@@ -63,10 +67,10 @@
               </router-link>
               </li>
               <li class="nav-item">
-                  <router-link to="#" class="nav-link">
+                  <router-link to="/product-assembly" class="nav-link">
                     <i class="fa fa-archive nav-icon"></i>
                     <p>Product Assembly</p>
-              </router-link>
+                 </router-link>
                 </li>
             </ul>
             </li>
@@ -85,24 +89,33 @@
               </a>
             </li>
 
-            <li class="nav-item">
-              <a href="#" class="nav-link">
+            <li class="nav-item menu-is-opening menu-open" v-if="mainMenu == 'Report-Master'">
+              <router-link to="" class="nav-link active">
                 <i class="nav-icon fas fa-list"></i>
                 <p>Report Master<i class="fas fa-angle-left right"></i></p>
-              </a>
+              </router-link>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-list nav-icon"></i>
+                <router-link to="/menu-wise-report" v-if="subMenu == 'Menu-Wise-Report'" class="nav-link active">
+                   <i class="fas fa-list nav-icon"></i>
                     <p>Menu Wise Report</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
+                </router-link>
+                <router-link to="/menu-wise-report" v-else class="nav-link">
+                   <i class="fas fa-list nav-icon"></i>
+                    <p>Menu Wise Report</p>
+                </router-link>
+              </li>
+               
+                 <li class="nav-item">
+                <router-link to="/product-wise-report" v-if="subMenu == 'Product-Wise-Report'" class="nav-link active">
                     <i class="fas fa-list nav-icon"></i>
                     <p>Product Wise Report</p>
-                  </a>
-                </li>
+                </router-link>
+                <router-link to="/product-wise-report" v-else class="nav-link">
+                    <i class="fas fa-list nav-icon"></i>
+                    <p>Product Wise Report</p>
+                </router-link>
+              </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="fas fa-list nav-icon"></i>
@@ -117,7 +130,39 @@
                 </li>
               </ul>
             </li>
-
+            <li class="nav-item menu-is-opening menu-open" v-else>
+              <router-link to="" class="nav-link">
+                <i class="nav-icon fas fa-list"></i>
+                <p>Report Master<i class="fas fa-angle-left right"></i></p>
+              </router-link>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                   <router-link to="/menu-wise-report" class="nav-link">
+                    <i class="fas fa-list nav-icon"></i>
+                    <p>Menu Wise Report</p>
+                  </router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link to="/product-wise-report" class="nav-link">
+                    <i class="fas fa-list nav-icon"></i>
+                    <p>Product Wise Report</p>
+                  </router-link>
+                 </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-list nav-icon"></i>
+                    <p>Sales Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-list nav-icon"></i>
+                    <p>Purchase Report</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fa fa-th-large"></i>

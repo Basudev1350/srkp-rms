@@ -73,7 +73,7 @@
                     </div>
                   </div>
                   <table class="table table-bordered table-striped">
-                    <thread>
+                    <thead>
                       <tr>
                       <th>SL</th>
                       <th>Material</th>
@@ -82,7 +82,7 @@
                       <th>Closing Stock</th>
                       <th>Action</th>
                       </tr>
-                    </thread>
+                    </thead>
                     <tbody>
                       
                     </tbody>

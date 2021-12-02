@@ -139,10 +139,10 @@
                 </ul>
                 <div class="tab-content" id="custom-content-below-tabContent">
                   <div class="tab-pane fade active show" id="custom-content-below-home" role="tabpanel" aria-labelledby="custom-content-below-home-tab">
-                    <canvas id="myChart1"></canvas>
+                       <chartOne />
                   </div>
                   <div class="tab-pane fade" id="custom-content-below-profile" role="tabpanel" aria-labelledby="custom-content-below-profile-tab">
-                    <canvas id="myChart2"></canvas>
+                    <chartTwo />
                   </div>
                   <div class="tab-pane fade" id="custom-content-below-messages" role="tabpanel" aria-labelledby="custom-content-below-messages-tab">
                     <canvas id="myChart3"></canvas>
@@ -218,35 +218,20 @@
   </div>
 </template>
 <script>
-import Sidebar from './layout/sidebar.vue'
-//import Sidebar from './layout/sidebar.vue'
-import TopNavigation from './layout/topNavigation.vue'
-// import BtmFooter from './layout/footer.vue'
-// import VueApexCharts from 'vue-apexcharts'
+import Sidebar       from   './layout/sidebar.vue'
+import TopNavigation from   './layout/topNavigation.vue'
+import chartTwo      from   './chart/chartTwo.vue'
+import chartOne      from   './chart/chartOne.vue'
 
-// Vue.component('apexchart', VueApexCharts)
 export default {
   components:{
-    //  apexcharts: VueApexCharts,
-    'sidebar':Sidebar,
+    'sidebar'       :Sidebar,
     'top-navigation':TopNavigation,
-    // 'btm-footer':BtmFooter
+    'chartTwo'      :chartTwo,
+    'chartOne'      :chartOne
   },
   data(){
-    return {
-    // chartOptions: {
-    //     chart: {
-    //       id: 'basic-bar'
-    //     },
-    //     xaxis: {
-    //       categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
-    //     }
-    //   },
-    //   series: [{
-    //     name: 'series-1',
-    //     data: [30, 40, 45, 50, 49, 60, 70, 91]
-    //   }]
-    };
+   return{};
   },
   methods:{
     logout()

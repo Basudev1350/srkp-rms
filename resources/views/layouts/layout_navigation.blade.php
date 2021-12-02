@@ -18,7 +18,7 @@
   <!-- JQVMap -->
   <link rel="stylesheet" href="{{asset('dist/css/jqvmap.min.css')}}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
+  <link rel="stylesheet" href="{{asset('dist/css/adminlte.css')}}">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{asset('dist/css/OverlayScrollbars.min.css')}}">
   <!-- Daterange picker -->
@@ -33,6 +33,15 @@
         </div>
         <div id="rawMaterials">
          @yield('rawMaterials')
+        </div>
+        <div id="productAssembly">
+         @yield('productAssembly')
+        </div>
+        <div id="productwiseReport">
+         @yield('productwiseReport')
+        </div>
+        <div id="menuwiseReport">
+         @yield('menuwiseReport')
         </div>
         <!-- REQUIRED SCRIPTS --> 
         <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
@@ -66,25 +75,25 @@
         <script src="{{asset('dist/js/jquery.overlayScrollbars.min.js')}}"></script>
         <!-- AdminLTE App -->
         <script src="{{asset('dist/js/adminlte.js')}}"></script>
-        <script src="{{asset('dist/js/pages/dashboard.js')}}"></script>
+        <!-- <script src="{{asset('dist/js/pages/dashboard.js')}}"></script> -->
        <script>
-    $(function () {
-        //Initialize Select2 Elements
-        $('.select2bs4').select2({
-        theme: 'bootstrap4'
-        })
+    // $(function () {
+    //     //Initialize Select2 Elements
+    //     $('.select2bs4').select2({
+    //     theme: 'bootstrap4'
+    //     })
     
-    $(".add-invoice-table-row").click(function() {
-        var markup = "<tr><td class='text-center'><a href='javascript:void(0);' class='del-row'><i class='fa fa-trash text-danger' aria-hidden='true'></i></a>|1</td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips mb-1' placeholder='Item Name'><textarea class='form-control form-control-sm inv-ips desc-box' name='' id='' placeholder='Description....'></textarea></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td class='inv-field'><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td><td class='inv-field'><select class='form-control form-control-sm inv-ips' style='width: 100%;'><option selected='selected'>--None--</option><option value=''>GST@0%</option><option value=''>GST@0.25%</option><option value=''>GST@3%</option><option value=''>GST@5%</option><option value=''>GST@12%</option><option value=''>GST@18%</option><option value=''>GST@28%</option><option value=''>Exempted</option></select></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips' disabled></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips text-right'></td></tr>";
-        $('.invoice-table tbody').append(markup);
-        $('.adv_dropdown option').prop('selected', function() {
-            return this.defaultSelected;
-        });
-    });
-    $('.invoice-table tbody').on('click', '.del-row', function () {
-            $(this).closest('tr').remove();
-        })
-    });
+    // $(".add-invoice-table-row").click(function() {
+    //     var markup = "<tr><td class='text-center'><a href='javascript:void(0);' class='del-row'><i class='fa fa-trash text-danger' aria-hidden='true'></i></a>|1</td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips mb-1' placeholder='Item Name'><textarea class='form-control form-control-sm inv-ips desc-box' name='' id='' placeholder='Description....'></textarea></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td class='inv-field'><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips'></td><td class='inv-field'><select class='form-control form-control-sm inv-ips' style='width: 100%;'><option selected='selected'>--None--</option><option value=''>GST@0%</option><option value=''>GST@0.25%</option><option value=''>GST@3%</option><option value=''>GST@5%</option><option value=''>GST@12%</option><option value=''>GST@18%</option><option value=''>GST@28%</option><option value=''>Exempted</option></select></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips' disabled></td><td class='inv-field'><input type='text' class='form-control form-control-sm inv-ips text-right'></td></tr>";
+    //     $('.invoice-table tbody').append(markup);
+    //     $('.adv_dropdown option').prop('selected', function() {
+    //         return this.defaultSelected;
+    //     });
+    // });
+    // $('.invoice-table tbody').on('click', '.del-row', function () {
+    //         $(this).closest('tr').remove();
+    //     })
+    // });
   </script>
-    </body>
+  </body>
 </html>

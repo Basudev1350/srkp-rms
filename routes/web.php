@@ -22,3 +22,6 @@ Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard','SystemController@dashboard')->name('dashboard');
 Route::get('/raw-materials','SystemController@rawMaterials');
+Route::get('/product-assembly','SystemController@productAssembly');
+Route::get('/product-wise-report','SystemController@productwiseReport');
+Route::get('/menu-wise-report','SystemController@menuwiseReport');

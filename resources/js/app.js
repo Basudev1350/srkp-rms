@@ -18,5 +18,17 @@ function newFunction()
     const rawMaterials = new Vue({
         el: '#rawMaterials',
         router: new VueRouter(routes)
+    }); 
+    const productAssembly = new Vue({
+        el: '#productAssembly',
+        router: new VueRouter(routes)
     });     
+    const productwiseReport = new Vue({
+        el: '#productwiseReport',
+        router: new VueRouter(routes)
+    }); 
+    const menuwiseReport = new Vue({
+        el: '#menuwiseReport',
+        router: new VueRouter(routes)
+    }); 
  }

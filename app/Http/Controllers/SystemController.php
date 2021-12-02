@@ -24,6 +24,19 @@ class SystemController extends Controller
   {
     return view('user.stockMaster.rawMaterials');//folder.bladefile name
   }
+  public function productAssembly()
+  {
+    return view('user.stockMaster.productAssembly');//folder.bladefile name
+  }
+  public function productwiseReport()
+  {
+    return view('user.reportMaster.productwiseReport');//folder.bladefile name
+  }
+  public function menuwiseReport()
+  {
+    return view('user.reportMaster.menuwiseReport');//folder.bladefile name
+  }
+
 
   /**
    * Show the application dashboard.

@@ -52250,4 +52250,23 @@ a.text-muted:hover {
 .orders-heading{
   font-size:13px;
 }
+.content-wrapper{
+  background-color: #d9cece !important;
+}
+.card-header{
+  background-color: #eae1e1 !important;
+}
+input{
+  border:1px solid !important;
+}
+select{
+border:1px solid !important;
+}
+.table-bordered thead th{
+  border:1px solid !important;
+}
+.table-bordered tbody td{
+  border:1px solid !important;
+}
+
 /*# sourceMappingURL=adminlte.css.map */
