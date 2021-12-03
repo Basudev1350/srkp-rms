@@ -12,8 +12,8 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Inventory</li>
+              <li class="breadcrumb-item"><a class="text-info" href="#">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-info" href="#">Inventory</a></li>
               <li class="breadcrumb-item active">Manage Inventory</li>
             </ol>
           </div><!-- /.col -->
@@ -25,43 +25,52 @@
     <!-- Main content -->
     <section class="content">
       <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-3">
             <div class="card">
             <div class="card-header">
             <h5 class="m-0 text-info text-left">Add Raw Materials</h5>
             </div>
             <div class="card-body">
             <form class="mt-3"> 
-             <div class="form-group">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
                  <label class="text-grey">Material Name</label>
                  <input type="text" class="form-control form-control-sm" >
-             </div>
-             <div class="row">
-                 <div class="col-md-4">
-                    <div class="form-group">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
                         <label class="text-grey">Unit</label>
                         <input type="number" class="form-control form-control-sm" >
-                    </div>
-                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
                  <div class="col-md-4">
                     <div class="form-group">
                         <label class="text-grey">Min Qty</label>
-                        <input type="text" class="form-control form-control-sm" >
+                        <input type="number" class="form-control form-control-sm" >
                     </div>
                  </div>
-                 <div class="col-md-4">
+                 <div class="col-md-8">
                     <div class="form-group">
                         <label class="text-grey">Opening stock</label>
                         <input type="text" class="form-control form-control-sm" >
                     </div>
                  </div>
              </div>
-             <input type="submit" class="btn btn-info btn-sm mt-3" value="Add Raw Material">
+             <div class="row">
+               <div class="col-md-4 offset-md-2">
+                  <input type="submit" class="btn btn-info btn-sm mt-3" value="Add Raw Material">
+               </div>
+             </div>
+            
             </form>
             </div>
             </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-9">
               <div class="card">
                 <div class="card-header">
                 <h5 class="m-0 text-info text-left">Inventory Details On:</h5>
@@ -84,7 +93,28 @@
                       </tr>
                     </thead>
                     <tbody>
-                      
+                      <tr>
+                        <td>01</td>
+                        <td>Pizza</td>
+                        <td>3</td>
+                        <td>10-12-2021</td>
+                        <td>25-12-2021</td>
+                        <td class="noExport">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52" aria-expanded="false">
+                              <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                              <a href="#" class="dropdown-item">View/ Edit</a>
+                              <a href="#" class="dropdown-item">Delete</a>
+                              <a href="#" class="dropdown-item">View Transactions</a>
+                              <a href="#" class="dropdown-item">Print as PDF</a>
+                              <a href="#" class="dropdown-item">Preview</a>
+                              <a href="#" class="dropdown-item">Deactivate</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
                     </tbody>
                 </table>
                 </div>

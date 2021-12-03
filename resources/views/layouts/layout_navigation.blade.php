@@ -25,9 +25,20 @@
   <link rel="stylesheet" href="{{asset('dist/css/daterangepicker.css')}}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{asset('dist/css/summernote-bs4.min.css')}}">
-</head>
+  </head>
   <body class="sidebar-mini layout-navbar-fixed layout-fixed text-sm">
-      
+      <div>
+        @yield('userRegister')
+       </div>
+       <div>
+        @yield('userLogin')
+       </div>
+       <div>
+        @yield('resetPassword')
+       </div>
+       <div>
+        @yield('recoverPassword')
+       </div>
        <div id="dashboard">
          @yield('dashboard')
         </div>

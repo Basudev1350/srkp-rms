@@ -12,12 +12,8 @@
           <a href="#" class="btn bg-gradient-success btn-sm"><i class="fa fa-clock"></i> Happy Hour</a>
         </li>
       </ul>
-      
-  
-  
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
-  
         <!-- Navbar Search -->
         <li class="nav-item">
           <a class="nav-link" data-widget="navbar-search" href="#" role="button">
@@ -39,10 +35,9 @@
             </form>
           </div>
         </li>
-  
         <!-- Logout Dropdown Menu -->
         <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
+          <a class="nav-link" data-toggle="dropdown" @click="logout">
             <i class="fas fa-power-off"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -55,20 +50,33 @@
                     Hi, Souvik Kundu
                   </h3>
                   <p class="text-sm">Last logged in: 12:20 AM</p>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-danger mt-2">Log Out</a>
+                  <button type="submit" class="btn btn-sm btn-danger mt-2">Log Out</button>
                 </div>
               </div>
               <!-- Logout End -->
             </div>
           </div>
         </li>
-  
         <li class="nav-item">
           <a class="nav-link" data-widget="fullscreen" href="#" role="button">
             <i class="fas fa-expand-arrows-alt"></i>
           </a>
         </li>
-  
       </ul>
     </nav>
 </template>
+<script>
+export default {
+    data(){
+        return{}
+    },
+    methods:{
+      logout()
+        {
+            axios.post('/logout').then(function(){
+                document.location.href = "/login";
+            })
+        },
+    },  
+}
+</script>

@@ -52268,5 +52268,19 @@ border:1px solid !important;
 .table-bordered tbody td{
   border:1px solid !important;
 }
+.content-header{
+background-color: #eae1e1 !important;
+margin-bottom: 10px !important; 
+padding: 3px 0px 0.5px 0px !important;
+box-shadow: -8px 18px 46px -16px rgba(0,0,0,0.75) !important
+}
+table thead th{
+  font-size: 12px;
+  text-align:center;
+}
+.table-bordered tbody td {
+  font-size: 12px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=adminlte.css.map */
